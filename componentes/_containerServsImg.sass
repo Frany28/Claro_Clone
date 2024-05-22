@@ -1,0 +1,43 @@
+@import "./_general"
+
+.containerC
+  margin-top: 60px
+  padding-bottom: 35px
+
+.slider-wrapper
+  position: relative
+  max-width: 750px
+  margin: 0 auto
+
+.slider
+  display: flex
+  overflow-x: hidden
+  scroll-snap-type: xmandatory
+  scroll-behavior: smooth
+  box-shadow: 0 .25rem .5rem #212126
+  border-radius: .5rem
+
+.slider img
+  flex: 1 0 100%
+  scroll-snap-align: start
+  object-fit: cover
+  
+.slider-nav
+  display: flex
+  column-gap: 1rem
+  position: absolute
+  bottom: 1.25rem
+  left: 50%
+  transform: translateX(-50%)
+  z-index: 1
+
+.slider-nav a
+  width: .6rem
+  height: .6rem
+  border-radius: 50%
+  background-color: nth($background-color , 1)
+  opacity: .75
+  transition: opacity ease 250ms
+
+.slider-nav a:hover
+  opacity: 100%

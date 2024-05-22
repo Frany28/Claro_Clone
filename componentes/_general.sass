@@ -1,0 +1,44 @@
+/*Variables*/
+$background-color: #cbc3c39b,#3C6E71,#e8e4e4,#dbd6d6d7,#c90606
+
+$font-family: "Fira Sans", sans-serif
+/*lista de variables*/
+$text-color: #FFFF,#284b63,#dbd6d6d7
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-boss
+
+@mixin displays($display: flex , $justify:center , $aling:center, $direction:row,$columns-number:1fr)
+  @if $display==flex
+    display: $display
+    justify-content: $justify
+    align-items: $aling
+    flex-direction: $direction
+  @else if $display==grid
+    display: grid
+    grid-template-columns: $columns-number
+    align-items: $aling
+    justify-content: $justify  
+
+    
+
+    
+@mixin grid($columnas:auto-fit,$espacio,$justify:center,$aling:center)
+  display: grid
+  grid-template-columns: repeat($columnas,minmax(350px,1fr))
+  gap: $espacio
+  justify-content: $justify
+  align-items: $aling  
+  
+
+
+body
+  color: nth($text-color,2)
+  font-family: $font-family
+  background-color: nth($background-color,3)
+
+
+
+

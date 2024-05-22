@@ -1,0 +1,71 @@
+@import "./_general"
+.container
+  width: 100%
+.userOferts
+  display: grid
+  grid-template-columns: 1fr
+  justify-content: center
+  align-items: center
+
+  
+.containerImg
+  @include grid(auto-fit,5px)
+  align-items: center
+  
+ 
+
+
+.userOferts>h1
+  font-size: 2rem
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5)
+  padding: 60px 40px
+  text-align: center
+
+
+.img01 
+  background-color: nth($background-color,2)
+  border-radius: 20px
+  max-width: 340px
+  gap: 5px
+
+
+.img01 > h3
+  text-align: center
+  color: nth($text-color,1)
+  opacity: .75
+  padding-top: 5px
+  padding-bottom: 5px
+  
+.img01Actions
+  position: relative
+  
+.img01Actions>img
+  border-radius: 20px
+  transition: transform 0.1s ease
+
+
+.img01:hover 
+  transform: scale(1.1)
+  transition: transform 0.3s ease
+
+.boton
+  position: absolute
+  bottom: 10px
+   /* Ajusta la distancia desde la parte inferior */
+  left: 50%
+  transform: translateX(-50%)
+  background-color: nth($background-color,5)
+  color: white
+  border: none
+  cursor: pointer
+  border-radius: 20px
+  padding: 15px 20px
+
+.boton:hover
+   background-color: #a10000
+   transition: 250ms
+
+
+ 
+  
+  

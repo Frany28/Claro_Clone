@@ -3,19 +3,146 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Claro: Celulares, Internet, Fibra óptica, Pospago y más</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <!----HEADER---->
   <header>
-    <div class="headerTop">
-      <div class="container">
-        <div class="hTopSegment"></div>
-        <div class="hTopRight"></div>
+    <!--BARRA PRINCIPAL-->
+    <nav>
+      <div class="mainLeft">
+        <div class="icons">
+          <i class="fa-solid fa-bars"></i>
+        <img src="https://www.claro.com.pe/portal/pe/recursos_tema/assets/vector/logo-claro-blanco.svg" alt="claroLogo">
+        </div>
+        
+        <div class="hcontainer">
+          <div>
+            <p>Servicios</p>
+            <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i>
+          </div>
+          <div> 
+            <p>Tienda</p>
+            <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i>
+          </div>
+          <div>
+            <p>¿Necesitas ayuda?</p>
+            <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i>
+          </div>
+          <div>
+            <p>Hablando Claro</p>
+            <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i>
+          </div>   
+             
+          </div>
       </div>
-    </div>
-    <div class="headerMain"></div>
-    <div class="hSearchBox"></div>
+
+      <div class="mainRight">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <button><i class="fa-regular fa-user"></i>Mi Claro</button>
+        
+      </div>   
+    </nav>
+
+    <!--CARRUCEL DE IMAGENES Y OPCIONES DE PLANES-->
+    <section class="containerC">
+      <div class="slider-wrapper">
+        <div class="slider">
+          <img id="slider-1" src="https://www.claro.com.pe/portal/pe/recursos_contenido/m_banner_principal_planes_260224_(1).webp" alt="">
+          <img id="slider-2" src="https://www.claro.com.pe/portal/pe/recursos_contenido/mb-full-claro-fibraoptica.webp" alt="">
+          <img id="slider-3" src="https://www.claro.com.pe/portal/pe/recursos_contenido/mb-principal-home-portabilidad.webp" alt="">
+          <img id="slider-4" src="https://www.claro.com.pe/portal/pe/recursos_contenido/mb-principal-clarotvmas.webp" alt="">
+        </div>
+        <div class="slider-nav">
+          <a href="#slider-1"></a>
+          <a href="#slider-2"></a>
+          <a href="#slider-3"></a>
+          <a href="#slider-4"></a>
+        </div>
+        
+      </div>
+    </section>
   </header>
+ 
+  <div class="userOferts">
+    <h1>Tenemos lo que estas buscando</h1>
+    <div class="container">
+      <div class="containerImg">
+        <div class="img01">
+          <h3>EQUIPOS</h3>
+          <div class="img01Actions">
+            <img src="https://www.claro.com.pe/portal/pe/recursos_contenido/mb-equipos.webp" alt="Me interesa">
+            <button class="boton">Me interesa</button>
+          </div>
+        </div>
+    </div>
+    
+        
+        <!--
+          <div class="img01">
+            <h3>POSTPAGO MAX</h3>
+            <div class="img01Actions">
+              <img src="https://www.claro.com.pe/portal/pe/recursos_contenido/mb-postpago-me-interesa-claro.webp" alt="Me interesa">
+              <button class="boton">Me interesa</button>
+            </div>
+          </div>
+    
+        <div class="img01">
+          <h3>CLARO HOGAR</h3>
+          <div class="img01Actions">
+            <img src="https://www.claro.com.pe/portal/pe/recursos_contenido/HOGAR+28129.webp" alt="Me interesa">
+            <button class="boton">Me interesa</button>
+          </div>
+        </div>
+    
+        <div class="img01">
+          <h3>PREPAGO CHÉVERE</h3>
+          <div class="img01Actions">
+            <img src="https://www.claro.com.pe/portal/pe/recursos_contenido/PREPAGO+28129.webp" alt="Me interesa">
+            <button class="boton">Me interesa</button>
+          </div>
+        </div>
+        --> 
+ 
+  </div>
+</div>
+
+  <section class="plans">
+    <div class="title">
+      <i class="fa-solid fa-wifi"></i>
+      <h1>Contrata Internet hogar, Fibra óptica, TV y más en Claro.</h1>
+    </div>
+    
+    <div class="plansOferts">
+      <div class="priceAndCost">
+        <h3>INTERNET FIBRA ÓPTICA 600MBPS</h3>
+        <i class="fa-solid fa-wifi"></i>
+        <p>Precio mensual</p>
+        <h2>20$</h2>
+      </div>
+      <div class="bond">
+        <h2>BONO DE 1000Mbps x 6 MESES</h2>
+      </div>
+      <div class="fullClaro">
+       <p>Velocidad con Full Claro para toda la vida </p>
+       <h3>800Mbs</h3>
+      </div>
+      <div class="whithoutFullClaro">
+        <p>Velocidad regular (Sin Full Claro)</p>
+        <h3>400Mbps</h3>
+      </div>
+      <div class="request">
+        <button><i class="fa-solid fa-bag-shopping"></i>Solicitar</button>
+      </div>
+
+      
+    </div>
+  </section>
 </body>
 </html>
