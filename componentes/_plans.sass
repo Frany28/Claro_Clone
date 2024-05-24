@@ -2,17 +2,20 @@
 
 .plans
   background-color: nth($background-color,1)
-  padding-top: 5px
+  padding-top: 3px
+  font-weight: bold
+
 .plansOferts
   max-width: 557px
-  height: 472px
-  
+  height: 400px
+  @include grid(auto-fit,10px)
 
+  
 .title
   @include displays()
   font-size: 15px
   gap: 10px
-  padding: 15px 15px
+  padding: 20px 10px
   color: nth($text-color,1)
   text-align: center
   background-color: nth($background-color,5)
@@ -27,6 +30,7 @@
   flex-wrap: wrap
   justify-content: center
   padding-bottom: 20px
+  gap: 40px
 
 .plansOferts
   box-shadow: 0 .20rem .3rem #212126
@@ -40,12 +44,13 @@
   background-color: nth($background-color,2)
   color: nth($text-color,1)
   margin: 0px 20px
+  padding: 10px 10px
   border-bottom-left-radius: 40px
   border-bottom-right-radius: 40px
 
 .priceAndCost
   @include displays(flex, space-between,center)
-  padding: 20px 40px
+  padding: 20px 20px
 
 .text>p
   font-size: 15px
@@ -65,9 +70,59 @@
   text-align: center
   color: nth($text-color,4)
 
-
-
   
+.fullClaro
+  @include displays(flex, space-between,center)
+  padding: 20px 20px
+  border-bottom: 1px solid #544c4c9b
+
+.fullClaro>h3
+  font-size: 25px
+  padding: 10px 10px
+  color: nth($text-color,4)
+
+.fullClaro>p
+  color: nth($text-color,5)
+
+.whithoutFullClaro
+  @include displays(flex, space-between,center)
+  padding: 20px 20px
+  border-bottom: 1px solid #544c4c9b
+
+.whithoutFullClaro>h3
+  font-size: 25px
+  padding: 10px 10px
+  color: nth($text-color,5)
+
+.whithoutFullClaro>p
+  color: nth($text-color,5)
+
+.ClaroBenefits
+  @include displays(flex, space-between,center)
+  padding: 30px 20px
+  border-bottom: 1px solid #544c4c9b
+
+.ClaroBenefits>p
+  color: nth($text-color,5)
+
+.request
+  @include displays(flex, center,center)
+  padding: 30px 20px
+
+.request>button
+  color: white
+  border: none
+  cursor: pointer
+  background-color: nth($background-color,5)
+  border-radius: 20px
+  padding: 10px 20px
+
+.fa-bag-shopping  
+  padding-right: 15px
+
+.request>button:hover
+  background-color: #a10000
+   transition: 250ms
 
   
 
