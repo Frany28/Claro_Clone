@@ -205,10 +205,9 @@ body {
 .containerImg {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 10px;
+  gap: 20px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2px;
 }
 
 .userOferts > h1 {
@@ -221,8 +220,9 @@ body {
 .img01 {
   background-color: #3C6E71;
   border-radius: 20px;
-  max-width: 320px;
-  gap: 10px;
+  max-width: 350px;
+  height: 400px;
+  gap: 20px;
 }
 
 .img01 > h3 {
@@ -240,7 +240,6 @@ body {
 .img01Actions > img {
   border-radius: 20px;
   width: 100%;
-  height: 420px;
   transition: transform 0.1s ease;
 }
 
